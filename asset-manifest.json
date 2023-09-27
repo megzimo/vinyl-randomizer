@@ -1,0 +1,14 @@
+{
+  "files": {
+    "main.css": "/vinyl-randomizer/static/css/main.31d6cfe0.css",
+    "main.js": "/vinyl-randomizer/static/js/main.baee6605.js",
+    "static/js/787.f9471bc8.chunk.js": "/vinyl-randomizer/static/js/787.f9471bc8.chunk.js",
+    "index.html": "/vinyl-randomizer/index.html",
+    "main.baee6605.js.map": "/vinyl-randomizer/static/js/main.baee6605.js.map",
+    "787.f9471bc8.chunk.js.map": "/vinyl-randomizer/static/js/787.f9471bc8.chunk.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.31d6cfe0.css",
+    "static/js/main.baee6605.js"
+  ]
+}
