@@ -7,19 +7,22 @@ import {recordCollection} from './data/datasheet.js'
 const styles = StyleSheet.create({
   container: {
     flex: 1,
-    paddingTop: 22,
+    margin: 8,
+    fontFamily: 'veranda'
   },
   item: {
     padding: 16,
     fontSize: 18,
-    justifyContent: 'center'
+    margin: 8,
+    fontFamily: 'veranda'
+
   },
 });
 
 function HomeScreen({navigation}) {
   return (
-    <View style={{ flex: 1, alignItems: 'center', justifyContent: 'center' }}>
-      <Text>Home Screen</Text>
+    <View style={{margin: 12,  alignItems: 'center', justifyContent: 'center'}}>
+      <Text style={{fontSize: 36, marginBottom:48}}>Vinyl Randomizer</Text>
       <Button
       title="View Full Record Collection"
       onPress={() => navigation.navigate('Collection')}
@@ -31,7 +34,11 @@ function HomeScreen({navigation}) {
 function RecordCollection({navigation}) {
   return (
   <div>
-    <View style={{ alignItems: 'center', justifyContent: 'center' }}>
+    <View style={{margin: 12,  alignItems: 'center', justifyContent: 'center'}}>
+          <Button
+        title="Go to back to the Home Screen"
+        onPress={() => navigation.navigate('Home')}
+        />
       <Text style={{padding: 12, fontWeight: 'bold'}}>Meg & Quinn's Record Collection</Text>
       <FlatList 
         data={recordCollection}
@@ -39,10 +46,6 @@ function RecordCollection({navigation}) {
           <Text>{item.artist} ---------------- {item.album}</Text>        
         }
       />
-      <Button
-        title="Go to back to the Home Screen"
-        onPress={() => navigation.navigate('Home')}
-        />
         </View>
   </div>
   )
